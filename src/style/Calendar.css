@@ -1,0 +1,66 @@
+/* CalendarComponent.css */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.react-calendar {
+    width: 100%;
+    border: none;
+}
+
+.react-calendar__navigation button {
+    background: none;
+    color: rgb(44, 62, 80);
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: #d10000;
+}
+
+.react-calendar__tile {
+    border-radius: 50%;
+    width: 20px;
+    margin: 10%;
+}
+
+.react-calendar__tile--now {
+    background: rgb(74, 126, 238);
+    color: black;
+}
+
+.react-calendar__tile--active {
+    background: rgb(44, 62, 80);
+    color: white;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background: rgb(62, 81, 100);
+    color: white;
+}
+
+.react-calendar__tile--disabled {
+    background: none; /* Remove background for disabled dates */
+    color: #a0a0a0;
+}
+
+.active-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.active-date input[type="radio"] {
+    margin: 0;
+}

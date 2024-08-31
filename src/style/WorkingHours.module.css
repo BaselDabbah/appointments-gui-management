@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.day {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.dayHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 1rem;
+}
+
+.timePickerContainer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  direction: ltr;
+}
+
+.select div{
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+
+.select input{
+  border-radius: 10px;
+}
+
+.buttonContainer{
+  margin: auto;
+}
+
+.saveButton {
+  padding: 0.45rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.saveButton:hover {
+  background-color: #45a049;
+}
+
+.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.saveButton.enabled {
+  background-color: #4caf50;
+  color: white;
+}
+
+.saveButton.disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+
